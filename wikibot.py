@@ -19,7 +19,7 @@ ourMessages.append({'role' : 'user', 'content' : prompt})
 try:
     ### make an api call
     response = openai.ChatCompletion.create(
-        model = 'gpt-3.5-turbo-0301',
+        model = 'gpt-3.5-turbo-16k',
         messages = ourMessages,
         temperature = 1.2
     )
